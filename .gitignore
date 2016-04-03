@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 
 uploader/
+dev/
 secret/*
 !.gitkeep
 *.swp

@@ -54,7 +54,10 @@ class DriverGspread():
 		list_feed	= self.__client.get_list_feed(self.getWorksheetsId(), 
 									self.__sheet.get_worksheet_id())
 		for feed in list_feed.entry:
-			feed
+			print feed.get_value('projectname')
+			print feed.get_value('invoiceno')
+			print feed.get_value('orderdate')
+			if feed.get_value('paymentdate') 
 
 	def getWorkSheetByName(self, sheet_name=None):
 
